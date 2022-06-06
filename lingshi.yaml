@@ -5,63 +5,111 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: "[IEPL]台湾 01 *", server: iepl-api.5.xxxyyyzzzyyyxxx.xyz, port: 35005, type: ss, cipher: chacha20-ietf-poly1305, password: 1d88a43d-2f4e-4aba-a146-bf2325549314, udp: true}
+  - {name: "[IEPL]狮城 02 *", server: iepl-api.4.xxxyyyzzzyyyxxx.xyz, port: 35004, type: ss, cipher: chacha20-ietf-poly1305, password: 1d88a43d-2f4e-4aba-a146-bf2325549314, udp: true}
+  - {name: "[IEPL]狮城 01 *", server: iepl-api.3.xxxyyyzzzyyyxxx.xyz, port: 35003, type: ss, cipher: chacha20-ietf-poly1305, password: 1d88a43d-2f4e-4aba-a146-bf2325549314, udp: true}
+  - {name: "[IEPL]香港 02 *", server: iepl-api.2.xxxyyyzzzyyyxxx.xyz, port: 35002, type: ss, cipher: chacha20-ietf-poly1305, password: 1d88a43d-2f4e-4aba-a146-bf2325549314, udp: true}
+  - {name: 中国(TG频道:@kxswa), server: 116.129.254.47, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
   - {name: _144, server: shcm.pdjc.cc, port: 42000, type: trojan, password: 8d0db1d1-62a2-4d8b-b272-e4f364e064c6, sni: shcm.pdjc.cc, skip-cert-verify: true, udp: true}
-  - {name: _128, server: 212.81.47.15, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
-  - {name: _油管：全网最强白嫖, server: au2-3.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, sni: au2-3.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_28, server: vus5.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vus5.0bad.com}, udp: true}
-  - {name: _145, server: 198.200.51.219, port: 26969, type: trojan, password: 8d0db1d1-62a2-4d8b-b272-e4f364e064c6, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇸🇬SG-🇸🇬SG_2682, server: sghe.tjvpn.org, port: 443, type: trojan, password: 253152b0-e018-11ec-b935-225401db9d57, sni: sghe.tjvpn.org, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_19, server: ehez.dingzige.gq, port: 80, type: vmess, uuid: 6a6a6771-b885-4e99-a959-47d4107815d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dingzi, ws-headers: {Host: tms.dingtalk.com}, udp: true}
-  - {name: 美国-tg频道:@bpjzx2, server: mc.xiaohouzi.club, port: 28325, type: vmess, uuid: c900facf-7e5d-3caf-a49e-c4bb1996ca95, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: mc.xiaohouzi.club}, udp: true}
-  - {name: CN_191 | 5.61Mb, server: 139.9.88.116, port: 5800, type: vmess, uuid: 63c04e85-c6a0-4503-b2f7-ebf733e55db2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay__ 6.03Mb | 6.87Mb, server: 162.250.191.136, port: 31250, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 美国(TG频道:@kxswa), server: ss3.hao1799.net, port: 22382, type: vmess, uuid: ccd31532-5925-4dc0-8dfa-74162e3c07b4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港(TG频道:@kxswa), server: 47.243.87.171, port: 443, type: vmess, uuid: 4af38112-0854-48d8-9387-5ece4078a599, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /szGxn, ws-headers: {Host: 47.243.87.171}, udp: true}
+  - {name: (Youtube技术分享室)🇨🇳中国, server: 116.129.253.130, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: 中国(TG频道:@kxswa) 2, server: 116.129.254.47, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: 中国(TG频道:@kxswa) 3, server: 116.129.254.47, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: 中国(TG频道:@kxswa) 4, server: 116.129.254.29, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: 中国(TG频道:@kxswa) 5, server: 116.129.254.29, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: 中国(TG频道:@kxswa) 6, server: 116.129.254.47, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: 香港(TG频道:@kxswa) 2, server: gy01.20220512.cyou, port: 34568, type: trojan, password: 207eed47-ffdd-4bd4-91c1-719ac25c9cee, sni: gy01.20220512.cyou, skip-cert-verify: true, udp: true}
+  - {name: 中国(TG频道:@kxswa) 7, server: 223.166.129.29, port: 63078, type: vmess, uuid: c4630fde-3be4-32a5-87bb-01a0dfe5f9a1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 223.166.129.29}, udp: true}
+  - {name: "[IEPL]美国 01 *", server: iepl-api.8.xxxyyyzzzyyyxxx.xyz, port: 35009, type: ss, cipher: chacha20-ietf-poly1305, password: 1d88a43d-2f4e-4aba-a146-bf2325549314, udp: true}
+  - {name: v2rayfree.eu.org - 美国惠普HP 11, server: tj-us01.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, sni: tj-us01.yiyodns.xyz, skip-cert-verify: true, udp: true}
+  - {name: _130, server: 107.167.24.6, port: 17001, type: trojan, password: d4e9e6bb-daa4-44ed-aa29-d1b8d00ba7d6, skip-cert-verify: true, udp: true}
+  - {name: "[IEPL]日本 01 *", server: iepl-api.6.xxxyyyzzzyyyxxx.xyz, port: 35006, type: ss, cipher: chacha20-ietf-poly1305, password: 1d88a43d-2f4e-4aba-a146-bf2325549314, udp: true}
+  - {name: "[IEPL]日本 02 *", server: iepl-api.7.xxxyyyzzzyyyxxx.xyz, port: 35007, type: ss, cipher: chacha20-ietf-poly1305, password: 1d88a43d-2f4e-4aba-a146-bf2325549314, udp: true}
+  - {name: 中国(TG频道:@kxswa) 8, server: 116.129.254.29, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - "[IEPL]台湾 01 *"
+      - "[IEPL]狮城 02 *"
+      - "[IEPL]狮城 01 *"
+      - "[IEPL]香港 02 *"
+      - 中国(TG频道:@kxswa)
       - _144
-      - _128
-      - _油管：全网最强白嫖
-      - Relay_🇺🇸US-🇺🇸US_28
-      - _145
-      - Relay_🇸🇬SG-🇸🇬SG_2682
-      - Relay_🇺🇸US-🇺🇸US_19
-      - 美国-tg频道:@bpjzx2
-      - CN_191 | 5.61Mb
-      - Relay__ 6.03Mb | 6.87Mb
+      - 美国(TG频道:@kxswa)
+      - 香港(TG频道:@kxswa)
+      - (Youtube技术分享室)🇨🇳中国
+      - 中国(TG频道:@kxswa) 2
+      - 中国(TG频道:@kxswa) 3
+      - 中国(TG频道:@kxswa) 4
+      - 中国(TG频道:@kxswa) 5
+      - 中国(TG频道:@kxswa) 6
+      - 香港(TG频道:@kxswa) 2
+      - 中国(TG频道:@kxswa) 7
+      - "[IEPL]美国 01 *"
+      - v2rayfree.eu.org - 美国惠普HP 11
+      - _130
+      - "[IEPL]日本 01 *"
+      - "[IEPL]日本 02 *"
+      - 中国(TG频道:@kxswa) 8
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - "[IEPL]台湾 01 *"
+      - "[IEPL]狮城 02 *"
+      - "[IEPL]狮城 01 *"
+      - "[IEPL]香港 02 *"
+      - 中国(TG频道:@kxswa)
       - _144
-      - _128
-      - _油管：全网最强白嫖
-      - Relay_🇺🇸US-🇺🇸US_28
-      - _145
-      - Relay_🇸🇬SG-🇸🇬SG_2682
-      - Relay_🇺🇸US-🇺🇸US_19
-      - 美国-tg频道:@bpjzx2
-      - CN_191 | 5.61Mb
-      - Relay__ 6.03Mb | 6.87Mb
+      - 美国(TG频道:@kxswa)
+      - 香港(TG频道:@kxswa)
+      - (Youtube技术分享室)🇨🇳中国
+      - 中国(TG频道:@kxswa) 2
+      - 中国(TG频道:@kxswa) 3
+      - 中国(TG频道:@kxswa) 4
+      - 中国(TG频道:@kxswa) 5
+      - 中国(TG频道:@kxswa) 6
+      - 香港(TG频道:@kxswa) 2
+      - 中国(TG频道:@kxswa) 7
+      - "[IEPL]美国 01 *"
+      - v2rayfree.eu.org - 美国惠普HP 11
+      - _130
+      - "[IEPL]日本 01 *"
+      - "[IEPL]日本 02 *"
+      - 中国(TG频道:@kxswa) 8
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - "[IEPL]台湾 01 *"
+      - "[IEPL]狮城 02 *"
+      - "[IEPL]狮城 01 *"
+      - "[IEPL]香港 02 *"
+      - 中国(TG频道:@kxswa)
       - _144
-      - _128
-      - _油管：全网最强白嫖
-      - Relay_🇺🇸US-🇺🇸US_28
-      - _145
-      - Relay_🇸🇬SG-🇸🇬SG_2682
-      - Relay_🇺🇸US-🇺🇸US_19
-      - 美国-tg频道:@bpjzx2
-      - CN_191 | 5.61Mb
-      - Relay__ 6.03Mb | 6.87Mb
+      - 美国(TG频道:@kxswa)
+      - 香港(TG频道:@kxswa)
+      - (Youtube技术分享室)🇨🇳中国
+      - 中国(TG频道:@kxswa) 2
+      - 中国(TG频道:@kxswa) 3
+      - 中国(TG频道:@kxswa) 4
+      - 中国(TG频道:@kxswa) 5
+      - 中国(TG频道:@kxswa) 6
+      - 香港(TG频道:@kxswa) 2
+      - 中国(TG频道:@kxswa) 7
+      - "[IEPL]美国 01 *"
+      - v2rayfree.eu.org - 美国惠普HP 11
+      - _130
+      - "[IEPL]日本 01 *"
+      - "[IEPL]日本 02 *"
+      - 中国(TG频道:@kxswa) 8
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -80,67 +128,119 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - "[IEPL]台湾 01 *"
+      - "[IEPL]狮城 02 *"
+      - "[IEPL]狮城 01 *"
+      - "[IEPL]香港 02 *"
+      - 中国(TG频道:@kxswa)
       - _144
-      - _128
-      - _油管：全网最强白嫖
-      - Relay_🇺🇸US-🇺🇸US_28
-      - _145
-      - Relay_🇸🇬SG-🇸🇬SG_2682
-      - Relay_🇺🇸US-🇺🇸US_19
-      - 美国-tg频道:@bpjzx2
-      - CN_191 | 5.61Mb
-      - Relay__ 6.03Mb | 6.87Mb
+      - 美国(TG频道:@kxswa)
+      - 香港(TG频道:@kxswa)
+      - (Youtube技术分享室)🇨🇳中国
+      - 中国(TG频道:@kxswa) 2
+      - 中国(TG频道:@kxswa) 3
+      - 中国(TG频道:@kxswa) 4
+      - 中国(TG频道:@kxswa) 5
+      - 中国(TG频道:@kxswa) 6
+      - 香港(TG频道:@kxswa) 2
+      - 中国(TG频道:@kxswa) 7
+      - "[IEPL]美国 01 *"
+      - v2rayfree.eu.org - 美国惠普HP 11
+      - _130
+      - "[IEPL]日本 01 *"
+      - "[IEPL]日本 02 *"
+      - 中国(TG频道:@kxswa) 8
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - "[IEPL]台湾 01 *"
+      - "[IEPL]香港 02 *"
+      - 香港(TG频道:@kxswa)
+      - 香港(TG频道:@kxswa) 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - "[IEPL]台湾 01 *"
+      - "[IEPL]狮城 02 *"
+      - "[IEPL]狮城 01 *"
+      - "[IEPL]香港 02 *"
+      - 中国(TG频道:@kxswa)
       - _144
-      - _128
-      - _油管：全网最强白嫖
-      - Relay_🇺🇸US-🇺🇸US_28
-      - _145
-      - Relay_🇸🇬SG-🇸🇬SG_2682
-      - Relay_🇺🇸US-🇺🇸US_19
-      - 美国-tg频道:@bpjzx2
-      - CN_191 | 5.61Mb
-      - Relay__ 6.03Mb | 6.87Mb
+      - 美国(TG频道:@kxswa)
+      - 香港(TG频道:@kxswa)
+      - (Youtube技术分享室)🇨🇳中国
+      - 中国(TG频道:@kxswa) 2
+      - 中国(TG频道:@kxswa) 3
+      - 中国(TG频道:@kxswa) 4
+      - 中国(TG频道:@kxswa) 5
+      - 中国(TG频道:@kxswa) 6
+      - 香港(TG频道:@kxswa) 2
+      - 中国(TG频道:@kxswa) 7
+      - "[IEPL]美国 01 *"
+      - v2rayfree.eu.org - 美国惠普HP 11
+      - _130
+      - "[IEPL]日本 01 *"
+      - "[IEPL]日本 02 *"
+      - 中国(TG频道:@kxswa) 8
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - "[IEPL]台湾 01 *"
+      - "[IEPL]狮城 02 *"
+      - "[IEPL]狮城 01 *"
+      - "[IEPL]香港 02 *"
+      - 中国(TG频道:@kxswa)
       - _144
-      - _128
-      - _油管：全网最强白嫖
-      - Relay_🇺🇸US-🇺🇸US_28
-      - _145
-      - Relay_🇸🇬SG-🇸🇬SG_2682
-      - Relay_🇺🇸US-🇺🇸US_19
-      - 美国-tg频道:@bpjzx2
-      - CN_191 | 5.61Mb
-      - Relay__ 6.03Mb | 6.87Mb
+      - 美国(TG频道:@kxswa)
+      - 香港(TG频道:@kxswa)
+      - (Youtube技术分享室)🇨🇳中国
+      - 中国(TG频道:@kxswa) 2
+      - 中国(TG频道:@kxswa) 3
+      - 中国(TG频道:@kxswa) 4
+      - 中国(TG频道:@kxswa) 5
+      - 中国(TG频道:@kxswa) 6
+      - 香港(TG频道:@kxswa) 2
+      - 中国(TG频道:@kxswa) 7
+      - "[IEPL]美国 01 *"
+      - v2rayfree.eu.org - 美国惠普HP 11
+      - _130
+      - "[IEPL]日本 01 *"
+      - "[IEPL]日本 02 *"
+      - 中国(TG频道:@kxswa) 8
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - "[IEPL]台湾 01 *"
+      - "[IEPL]狮城 02 *"
+      - "[IEPL]狮城 01 *"
+      - "[IEPL]香港 02 *"
+      - 中国(TG频道:@kxswa)
       - _144
-      - _128
-      - _油管：全网最强白嫖
-      - Relay_🇺🇸US-🇺🇸US_28
-      - _145
-      - Relay_🇸🇬SG-🇸🇬SG_2682
-      - Relay_🇺🇸US-🇺🇸US_19
-      - 美国-tg频道:@bpjzx2
-      - CN_191 | 5.61Mb
-      - Relay__ 6.03Mb | 6.87Mb
+      - 美国(TG频道:@kxswa)
+      - 香港(TG频道:@kxswa)
+      - (Youtube技术分享室)🇨🇳中国
+      - 中国(TG频道:@kxswa) 2
+      - 中国(TG频道:@kxswa) 3
+      - 中国(TG频道:@kxswa) 4
+      - 中国(TG频道:@kxswa) 5
+      - 中国(TG频道:@kxswa) 6
+      - 香港(TG频道:@kxswa) 2
+      - 中国(TG频道:@kxswa) 7
+      - "[IEPL]美国 01 *"
+      - v2rayfree.eu.org - 美国惠普HP 11
+      - _130
+      - "[IEPL]日本 01 *"
+      - "[IEPL]日本 02 *"
+      - 中国(TG频道:@kxswa) 8
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -156,16 +256,28 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - "[IEPL]台湾 01 *"
+      - "[IEPL]狮城 02 *"
+      - "[IEPL]狮城 01 *"
+      - "[IEPL]香港 02 *"
+      - 中国(TG频道:@kxswa)
       - _144
-      - _128
-      - _油管：全网最强白嫖
-      - Relay_🇺🇸US-🇺🇸US_28
-      - _145
-      - Relay_🇸🇬SG-🇸🇬SG_2682
-      - Relay_🇺🇸US-🇺🇸US_19
-      - 美国-tg频道:@bpjzx2
-      - CN_191 | 5.61Mb
-      - Relay__ 6.03Mb | 6.87Mb
+      - 美国(TG频道:@kxswa)
+      - 香港(TG频道:@kxswa)
+      - (Youtube技术分享室)🇨🇳中国
+      - 中国(TG频道:@kxswa) 2
+      - 中国(TG频道:@kxswa) 3
+      - 中国(TG频道:@kxswa) 4
+      - 中国(TG频道:@kxswa) 5
+      - 中国(TG频道:@kxswa) 6
+      - 香港(TG频道:@kxswa) 2
+      - 中国(TG频道:@kxswa) 7
+      - "[IEPL]美国 01 *"
+      - v2rayfree.eu.org - 美国惠普HP 11
+      - _130
+      - "[IEPL]日本 01 *"
+      - "[IEPL]日本 02 *"
+      - 中国(TG频道:@kxswa) 8
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
